@@ -1878,11 +1878,10 @@ describe('ui-select tests', function () {
         if (attrs.limit !== undefined) { attrsHtml += ' limit="' + attrs.limit + '"'; }
         if (attrs.onSelect !== undefined) { attrsHtml += ' on-select="' + attrs.onSelect + '"'; }
         if (attrs.removeSelected !== undefined) { attrsHtml += ' remove-selected="' + attrs.removeSelected + '"'; }
-      }
 
       return compileTemplate(
         '<ui-select multiple ng-model="selection.selectedMultiple"' + attrsHtml + ' theme="bootstrap" style="width: 800px;"> \
-                <ui-select-match "' + matchesAttrsHtml + ' placeholder="Pick one...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match> \
+                <ui-select-match "' + matchesAttrsHtml + ' placeholder="Pick one...">{{$item.name}} &lt;{{$item.email}}&gt;</
                 <ui-select-choices repeat="person in people | filter: $select.search"' + choicesAttrsHtml + '> \
                   <div ng-bind-html="person.name | highlight: $select.search"></div> \
                   <div ng-bind-html="person.email | highlight: $select.search"></div> \
@@ -2032,6 +2031,10 @@ describe('ui-select tests', function () {
       expect(containerWidth - newWidth).toBeLessThan(10);
 
     });
+<<<<<<< HEAD
+=======
+
+>>>>>>> d8fed304ab7f7f8dfde1e8424ee2a572e31c7488
     it('should move to last match when pressing BACKSPACE key from search', function () {
 
       var el = createUiSelectMultiple();
@@ -2106,7 +2109,10 @@ describe('ui-select tests', function () {
 
     });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d8fed304ab7f7f8dfde1e8424ee2a572e31c7488
     it('should move to last match when pressing LEFT key from search', function () {
 
       var el = createUiSelectMultiple();

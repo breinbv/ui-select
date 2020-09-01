@@ -205,7 +205,6 @@ uis.directive('uiSelect',
           }
           $select.clickTriggeredSelect = false;
         }
-
         // See Click everywhere but here event http://stackoverflow.com/questions/12931369
         $document.on('click', onDocumentClick);
 

@@ -64,7 +64,7 @@ uis.controller('uiSelectCtrl',
   ctrl.isEmpty = function() {
     return isNil(ctrl.selected) || ctrl.selected === '' || (ctrl.multiple && ctrl.selected.length === 0);
   };
-
+  
   function _findIndex(collection, predicate, thisArg){
     if (collection.findIndex){
       return collection.findIndex(predicate, thisArg);
